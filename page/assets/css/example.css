@@ -1,27 +1,42 @@
+/*
+File: example.css
+Path: /AD-TASK-1/page/assets/css/example.css
+*/
+
 body {
     font-family: Arial, sans-serif;
-    padding: 30px;
-    background: #f7f7f7;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
-h1 {
-    color: #444;
+h1, h3 {
+    color: #333;
 }
 
-.grade {
-    font-weight: bold;
-}
-
-.green {
+.genre.green {
     color: green;
 }
-.blue {
+.genre.blue {
     color: blue;
 }
-.red {
+.genre.red {
     color: red;
 }
 
 ul {
     padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }

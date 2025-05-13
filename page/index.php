@@ -1,41 +1,35 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PHP Basics - AD Task</title>
+    <title>PHP Basics - Page 2</title>
     <link rel="stylesheet" href="assets/css/example.css">
 </head>
 <body>
-    <h1>AD-Task-1: PHP Basics</h1>
-    <p>Demonstrating declarations, conditionals, and loops in PHP.</p>
-
+    <h1>Game Categories</h1>
     <?php
-    // Declarations
-    $username = "Student";
-    $score = 78;
+    $games = ["Valorant", "Stardew Valley", "Terraria"];
 
-    echo "<h2>Hello, $username!</h2>";
-    echo "<p>Your score is: $score</p>";
-
-    // Conditional
-    if ($score >= 90) {
-        echo "<p class='grade green'>Grade: A</p>";
-    } elseif ($score >= 75) {
-        echo "<p class='grade blue'>Grade: B</p>";
-    } else {
-        echo "<p class='grade red'>Grade: C</p>";
-    }
-
-    // Looping
-    echo "<h3>Numbers 1 to 5</h3><ul>";
-    for ($i = 1; $i <= 5; $i++) {
-        echo "<li>Number: $i</li>";
+    echo "<h3>Games I Enjoy:</h3><ul>";
+    foreach ($games as $game) {
+        echo "<li>$game</li>";
     }
     echo "</ul>";
+
+    $hoursPlayed = 120;
+    echo "<p>Total hours played this month: $hoursPlayed</p>";
+
+    if ($hoursPlayed > 100) {
+        echo "<p class='genre green'>You're a hardcore gamer!</p>";
+    } else {
+        echo "<p class='genre blue'>Casual gaming is fun too!</p>";
+    }
     ?>
 
-    <img src="assets/img/nyebe_white.png" alt="Example image" width="200">
-
-    <script src="assets/js/example.js"></script>
+    <a href="/AD-Task-1/index.php">Back to Page 1</a>
 </body>
 </html>
